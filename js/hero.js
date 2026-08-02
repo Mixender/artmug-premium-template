@@ -1,7 +1,6 @@
 (() => {
   "use strict";
 
-  const ROOT_READY_CLASS = "is-ready";
   const RESIZE_MESSAGE_TYPE = "resizePortfolio";
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -19,15 +18,6 @@
       frame = window.requestAnimationFrame(postHeight);
     };
   })();
-
-  const initReveal = () => {
-    document.querySelectorAll("[data-reveal-delay]").forEach((element) => {
-      const delay = Number.parseInt(element.dataset.revealDelay, 10);
-      if (Number.isFinite(delay)) element.style.setProperty("--reveal-delay", `${delay}ms`);
-    });
-
-    requestAnimationFrame(() => document.documentElement.classList.add(ROOT_READY_CLASS));
-  };
 
   const initIframeResize = () => {
     window.addEventListener("load", scheduleHeightUpdate, { once: true });
@@ -59,7 +49,6 @@
   };
 
   const init = () => {
-    initReveal();
     initIframeResize();
     initSubtleParallax();
   };

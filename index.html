@@ -10,9 +10,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/hero.css">
   <link rel="stylesheet" href="./css/portfolio.css">
+  <link rel="stylesheet" href="./css/before-after.css">
   <script defer src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <script defer src="./js/hero.js"></script>
   <script defer src="./js/portfolio.js"></script>
+  <script defer src="./js/before-after.js"></script>
 </head>
 
 <body>
@@ -171,6 +173,40 @@
               <button class="portfolio-next" type="button" aria-label="다음 작업">→</button>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="comparison" id="comparison" aria-labelledby="comparison-title">
+      <div class="container comparison__inner">
+        <header class="comparison__header" data-reveal>
+          <div>
+            <p class="comparison__eyebrow">Before &amp; After</p>
+            <h2 class="comparison__title" id="comparison-title">한 번의 터치로<br>달라지는 인상</h2>
+          </div>
+          <p class="comparison__description">원본의 분위기는 살리고, 캐릭터가 가진 색과 세계관은 더 선명하게. 손잡이를 좌우로 움직여 디자인 전후를 비교해 보세요.</p>
+        </header>
+
+        <div class="comparison-slider" data-comparison data-reveal data-reveal-delay="120" style="--comparison-position: 50%;">
+          <div class="comparison-slider__media comparison-slider__media--before">
+            <img src="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=1600&q=82" alt="브랜딩 작업 전의 어두운 추상 이미지" width="1600" height="1067" loading="lazy">
+          </div>
+          <div class="comparison-slider__media comparison-slider__media--after" aria-hidden="true">
+            <img src="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=1600&q=88" alt="" width="1600" height="1067" loading="lazy">
+          </div>
+
+          <span class="comparison-slider__label comparison-slider__label--before">BEFORE</span>
+          <span class="comparison-slider__label comparison-slider__label--after">AFTER</span>
+
+          <div class="comparison-slider__divider" aria-hidden="true">
+            <span class="comparison-slider__handle"><i>‹</i><i>›</i></span>
+          </div>
+
+          <input class="comparison-slider__range" type="range" min="0" max="100" value="50" step="1" aria-label="디자인 전후 비교 위치" aria-valuetext="전후 이미지가 절반씩 보임">
+        </div>
+
+        <div class="comparison__hint" aria-hidden="true">
+          <span>←</span><p>드래그하여 비교하기</p><span>→</span>
         </div>
       </div>
     </section>

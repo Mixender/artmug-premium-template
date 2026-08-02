@@ -6,8 +6,13 @@
   <meta name="description" content="버튜버의 세계관을 하나의 브랜드 경험으로 완성하는 버츄얼 종합 디자인 스튜디오입니다.">
   <meta name="theme-color" content="#0b0b10">
   <title>찬란 디자인 | 버츄얼 종합 디자인</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/hero.css">
+  <link rel="stylesheet" href="./css/portfolio.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <script defer src="./js/hero.js"></script>
+  <script defer src="./js/portfolio.js"></script>
 </head>
 
 <body>
@@ -104,12 +109,79 @@
       </a>
     </section>
 
-    <section class="next-section" id="portfolio" aria-labelledby="portfolio-title">
+    <section class="portfolio" id="portfolio" aria-labelledby="portfolio-title">
       <div class="container">
-        <p>Selected works</p>
-        <h2 id="portfolio-title">포트폴리오 영역</h2>
+        <header class="portfolio__header" data-reveal>
+          <div>
+            <p class="portfolio__eyebrow">Selected works</p>
+            <h2 class="portfolio__title" id="portfolio-title">세계관을 완성한<br>대표 프로젝트</h2>
+          </div>
+          <p class="portfolio__intro">캐릭터의 첫인상부터 방송의 모든 순간까지, 하나의 결로 설계한 작업을 만나보세요.</p>
+        </header>
+
+        <div class="portfolio__stage" data-reveal data-reveal-delay="120">
+          <div class="swiper portfolio-slider" aria-label="대표 포트폴리오 슬라이드">
+            <div class="swiper-wrapper">
+              <article class="swiper-slide portfolio-card">
+                <button class="portfolio-card__zoom" type="button" aria-label="루미에르 데뷔 패키지 크게 보기" data-full-image="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=1800&q=88">
+                  <img src="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=1100&q=82" alt="보라색 네온 그래픽의 루미에르 데뷔 패키지" width="1100" height="733" loading="eager" fetchpriority="high">
+                  <span class="portfolio-card__expand" aria-hidden="true">↗</span>
+                </button>
+                <div class="portfolio-card__meta"><div><span>DEBUT PACKAGE</span><h3>Lumière</h3></div><p>Logo · Stream UI · Banner</p></div>
+              </article>
+
+              <article class="swiper-slide portfolio-card">
+                <button class="portfolio-card__zoom" type="button" aria-label="네온 아케이드 방송 화면 크게 보기" data-full-image="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1800&q=88">
+                  <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1100&q=82" alt="청록색 네온 도시를 활용한 방송 화면 디자인" width="1100" height="733" loading="lazy">
+                  <span class="swiper-lazy-preloader" aria-hidden="true"></span><span class="portfolio-card__expand" aria-hidden="true">↗</span>
+                </button>
+                <div class="portfolio-card__meta"><div><span>STREAM IDENTITY</span><h3>Neon Arcade</h3></div><p>Overlay · Chat · Starting</p></div>
+              </article>
+
+              <article class="swiper-slide portfolio-card">
+                <button class="portfolio-card__zoom" type="button" aria-label="오로라 브랜드 시스템 크게 보기" data-full-image="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?auto=format&fit=crop&w=1800&q=88">
+                  <img src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?auto=format&fit=crop&w=1100&q=82" alt="별빛과 오로라 콘셉트의 브랜드 시스템" width="1100" height="733" loading="lazy">
+                  <span class="swiper-lazy-preloader" aria-hidden="true"></span><span class="portfolio-card__expand" aria-hidden="true">↗</span>
+                </button>
+                <div class="portfolio-card__meta"><div><span>BRAND SYSTEM</span><h3>Aurora</h3></div><p>Symbol · Palette · Graphic</p></div>
+              </article>
+
+              <article class="swiper-slide portfolio-card">
+                <button class="portfolio-card__zoom" type="button" aria-label="사이버 블룸 일정표 디자인 크게 보기" data-full-image="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1800&q=88">
+                  <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1100&q=82" alt="레트로 게임 콘셉트의 사이버 블룸 일정표" width="1100" height="733" loading="lazy">
+                  <span class="swiper-lazy-preloader" aria-hidden="true"></span><span class="portfolio-card__expand" aria-hidden="true">↗</span>
+                </button>
+                <div class="portfolio-card__meta"><div><span>CONTENTS DESIGN</span><h3>Cyber Bloom</h3></div><p>Schedule · Thumbnail · Panel</p></div>
+              </article>
+
+              <article class="swiper-slide portfolio-card">
+                <button class="portfolio-card__zoom" type="button" aria-label="미드나잇 라디오 로고 디자인 크게 보기" data-full-image="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1800&q=88">
+                  <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1100&q=82" alt="밤하늘과 달빛을 활용한 미드나잇 라디오 로고 디자인" width="1100" height="733" loading="lazy">
+                  <span class="swiper-lazy-preloader" aria-hidden="true"></span><span class="portfolio-card__expand" aria-hidden="true">↗</span>
+                </button>
+                <div class="portfolio-card__meta"><div><span>LOGO DESIGN</span><h3>Midnight Radio</h3></div><p>Logotype · Emblem · Motion</p></div>
+              </article>
+            </div>
+          </div>
+
+          <div class="portfolio__controls">
+            <div class="portfolio-pagination" aria-label="슬라이드 페이지"></div>
+            <div class="portfolio__buttons">
+              <button class="portfolio-prev" type="button" aria-label="이전 작업">←</button>
+              <button class="portfolio-next" type="button" aria-label="다음 작업">→</button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
+    <dialog class="lightbox" aria-label="포트폴리오 이미지 확대 보기">
+      <button class="lightbox__close" type="button" aria-label="확대 이미지 닫기">×</button>
+      <figure class="lightbox__figure">
+        <img class="lightbox__image" src="" alt="">
+        <figcaption class="lightbox__caption"></figcaption>
+      </figure>
+    </dialog>
 
     <section class="anchor-section" id="contact" aria-label="작업 문의 영역"></section>
   </main>

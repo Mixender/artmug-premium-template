@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="./css/hero.css">
   <link rel="stylesheet" href="./css/portfolio.css">
   <link rel="stylesheet" href="./css/before-after.css">
+  <link rel="stylesheet" href="./css/pricing.css">
   <script defer src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <script defer src="./js/hero.js"></script>
   <script defer src="./js/portfolio.js"></script>
@@ -208,6 +209,73 @@
         <div class="comparison__hint" aria-hidden="true">
           <span>←</span><p>드래그하여 비교하기</p><span>→</span>
         </div>
+      </div>
+    </section>
+
+    <section class="pricing" id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <header class="pricing__header" data-reveal>
+          <div>
+            <p class="pricing__eyebrow">Simple pricing</p>
+            <h2 class="pricing__title" id="pricing-title">필요한 만큼,<br>명확하게 선택하세요</h2>
+          </div>
+          <p class="pricing__description">모든 상품은 캐릭터와 세계관에 맞춘 1:1 디자인으로 진행됩니다. 구성 외 작업은 상담 후 자유롭게 추가할 수 있습니다.</p>
+        </header>
+
+        <div class="pricing__grid">
+          <article class="price-card" data-reveal data-reveal-delay="60">
+            <header class="price-card__header">
+              <p class="price-card__type">STARTER</p>
+              <h3 class="price-card__name">라이트 디자인</h3>
+              <p class="price-card__summary">한 가지 작업을 빠르게 시작하고 싶은 분께</p>
+            </header>
+            <p class="price-card__price"><span>₩</span><strong>15,000</strong><small>부터</small></p>
+            <ul class="price-card__features">
+              <li><span aria-hidden="true">✓</span>썸네일 또는 일정표 1종</li>
+              <li><span aria-hidden="true">✓</span>시안 1종 제공</li>
+              <li><span aria-hidden="true">✓</span>수정 1회 포함</li>
+              <li><span aria-hidden="true">✓</span>PNG 완성본 제공</li>
+            </ul>
+            <a class="price-card__button" href="#contact">이 상품 문의하기</a>
+          </article>
+
+          <article class="price-card price-card--featured" data-reveal data-reveal-delay="120">
+            <div class="price-card__badge"><span aria-hidden="true">✦</span> MOST POPULAR</div>
+            <header class="price-card__header">
+              <p class="price-card__type">STANDARD</p>
+              <h3 class="price-card__name">방송 디자인 세트</h3>
+              <p class="price-card__summary">일관된 방송 화면을 한 번에 완성하는 추천 구성</p>
+            </header>
+            <p class="price-card__price"><span>₩</span><strong>49,000</strong><small>부터</small></p>
+            <ul class="price-card__features">
+              <li><span aria-hidden="true">✓</span>대기·채팅·게임 화면 3종</li>
+              <li><span aria-hidden="true">✓</span>캐릭터 맞춤 콘셉트 설계</li>
+              <li><span aria-hidden="true">✓</span>수정 2회 포함</li>
+              <li><span aria-hidden="true">✓</span>방송용 고해상도 완성본</li>
+              <li><span aria-hidden="true">✓</span>간단 사용 가이드 제공</li>
+            </ul>
+            <a class="price-card__button price-card__button--primary" href="#contact">추천 상품 문의하기 <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="price-card" data-reveal data-reveal-delay="180">
+            <header class="price-card__header">
+              <p class="price-card__type">PREMIUM</p>
+              <h3 class="price-card__name">데뷔 브랜딩</h3>
+              <p class="price-card__summary">첫인상부터 방송까지 하나의 브랜드로 완성</p>
+            </header>
+            <p class="price-card__price"><span>₩</span><strong>129,000</strong><small>부터</small></p>
+            <ul class="price-card__features">
+              <li><span aria-hidden="true">✓</span>로고 및 심볼 디자인</li>
+              <li><span aria-hidden="true">✓</span>방송 화면 세트 3종</li>
+              <li><span aria-hidden="true">✓</span>프로필·배너 디자인</li>
+              <li><span aria-hidden="true">✓</span>수정 3회 포함</li>
+              <li><span aria-hidden="true">✓</span>브랜드 컬러 가이드</li>
+            </ul>
+            <a class="price-card__button" href="#contact">패키지 상담하기</a>
+          </article>
+        </div>
+
+        <p class="pricing__notice">표시 가격은 기본 구성을 기준으로 하며, 작업 범위와 일정에 따라 달라질 수 있습니다.</p>
       </div>
     </section>
 

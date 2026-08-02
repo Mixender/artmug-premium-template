@@ -21,9 +21,9 @@
   <title>찬란 디자인 | 버츄얼 종합 디자인</title>
   <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
   <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
-  <link rel="preload" href="./css/app.min.css?v=logo-gallery-1" as="style">
-  <link rel="stylesheet" href="./css/app.min.css?v=logo-gallery-1">
-  <script defer src="./js/app.min.js?v=logo-gallery-1"></script>
+  <link rel="preload" href="./css/app.min.css?v=panel-marquee-1" as="style">
+  <link rel="stylesheet" href="./css/app.min.css?v=panel-marquee-1">
+  <script defer src="./js/app.min.js?v=panel-marquee-1"></script>
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -155,6 +155,24 @@
           </div>
           <p class="portfolio__intro">캐릭터의 첫인상부터 방송의 모든 순간까지, 하나의 결로 설계한 작업을 만나보세요.</p>
         </header>
+
+        <section class="panel-marquee" aria-labelledby="panel-marquee-title" data-reveal>
+          <div class="panel-marquee__heading">
+            <div><p class="panel-marquee__eyebrow">Streaming panels</p><h3 id="panel-marquee-title">방송 아래까지 귀엽게</h3></div>
+            <p>같은 무드, 매초 달라지는 하단 패널</p>
+          </div>
+          <div class="panel-marquee__viewport">
+            <div class="panel-marquee__track" data-panel-track>
+              <ul class="panel-marquee__group" data-panel-group>
+                <li class="panel-marquee__item" data-panel-slot="0"><img src="./assets/panels/panel-01.webp" alt="다시보기 하단 패널" width="1600" height="1600" decoding="async"></li>
+                <li class="panel-marquee__item" data-panel-slot="1"><img src="./assets/panels/panel-02.webp" alt="디스코드 하단 패널" width="1600" height="1600" decoding="async"></li>
+                <li class="panel-marquee__item" data-panel-slot="2"><img src="./assets/panels/panel-03.webp" alt="유튜브 하단 패널" width="1600" height="1600" loading="lazy" decoding="async"></li>
+                <li class="panel-marquee__item" data-panel-slot="3"><img src="./assets/panels/panel-04.webp" alt="트위터 하단 패널 타이포 시안" width="1600" height="1600" loading="lazy" decoding="async"></li>
+                <li class="panel-marquee__item" data-panel-slot="4"><img src="./assets/panels/panel-05.webp" alt="트위터 하단 패널" width="1600" height="1600" loading="lazy" decoding="async"></li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
         <div class="portfolio__stage portfolio__featured-banner" id="panel-banner" aria-label="배너 디자인 슬라이드쇼" data-reveal data-reveal-delay="120">
           <div class="swiper portfolio-slider" aria-label="대표 포트폴리오 슬라이드">

@@ -21,9 +21,9 @@
   <title>찬란 디자인 | 버츄얼 종합 디자인</title>
   <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
   <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
-  <link rel="preload" href="./css/app.min.css?v=portfolio-compact-2" as="style">
-  <link rel="stylesheet" href="./css/app.min.css?v=portfolio-compact-2">
-  <script defer src="./js/app.min.js"></script>
+  <link rel="preload" href="./css/app.min.css?v=portfolio-categories-1" as="style">
+  <link rel="stylesheet" href="./css/app.min.css?v=portfolio-categories-1">
+  <script defer src="./js/app.min.js?v=portfolio-categories-1"></script>
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -156,47 +156,55 @@
           <p class="portfolio__intro">캐릭터의 첫인상부터 방송의 모든 순간까지, 하나의 결로 설계한 작업을 만나보세요.</p>
         </header>
 
-        <div class="portfolio__stage" data-reveal data-reveal-delay="120">
+        <div class="portfolio-tabs" role="tablist" aria-label="포트폴리오 카테고리" data-reveal>
+          <button class="portfolio-tab" type="button" role="tab" id="tab-banner" aria-controls="panel-banner" aria-selected="false" data-portfolio-tab="banner">배너 디자인</button>
+          <button class="portfolio-tab is-active" type="button" role="tab" id="tab-stream" aria-controls="panel-stream" aria-selected="true" data-portfolio-tab="stream">스트리밍 디자인</button>
+          <button class="portfolio-tab" type="button" role="tab" id="tab-logo" aria-controls="panel-logo" aria-selected="false" data-portfolio-tab="logo">로고 디자인</button>
+          <button class="portfolio-tab" type="button" role="tab" id="tab-fancafe" aria-controls="panel-fancafe" aria-selected="false" data-portfolio-tab="fancafe">팬카페·PPT</button>
+          <button class="portfolio-tab" type="button" role="tab" id="tab-poster" aria-controls="panel-poster" aria-selected="false" data-portfolio-tab="poster">포스터·기타</button>
+        </div>
+
+        <div class="portfolio__stage portfolio-panel is-active" id="panel-stream" role="tabpanel" aria-labelledby="tab-stream" data-portfolio-panel="stream" data-reveal data-reveal-delay="120">
           <div class="swiper portfolio-slider" aria-label="대표 포트폴리오 슬라이드">
             <div class="swiper-wrapper">
               <article class="swiper-slide portfolio-card">
-                <button class="portfolio-card__zoom" type="button" aria-label="루미에르 데뷔 패키지 크게 보기" data-full-image="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=1800&q=88">
-                  <img src="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=1100&q=78" srcset="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=640&q=74 640w, https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=1100&q=78 1100w" sizes="(max-width: 759px) 84vw, 780px" alt="보라색 네온 그래픽의 루미에르 데뷔 패키지" width="1100" height="733" loading="lazy" decoding="async" fetchpriority="low">
+                <button class="portfolio-card__zoom" type="button" aria-label="핑크 토끼 캐릭터 방송 화면 크게 보기" data-full-image="./assets/portfolio/stream-01.webp">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-image-key="stream-01" alt="핑크 토끼 캐릭터 방송 화면 디자인" width="732" height="549" loading="lazy" decoding="async" fetchpriority="low">
                   <span class="portfolio-card__expand" aria-hidden="true">↗</span>
                 </button>
-                <div class="portfolio-card__meta"><div><span>DEBUT PACKAGE</span><h3>Lumière</h3></div><p>Logo · Stream UI · Banner</p></div>
+                <div class="portfolio-card__meta"><div><span>STREAM DESIGN</span><h3>핑크 래빗</h3></div><p>Starting · Background</p></div>
               </article>
 
               <article class="swiper-slide portfolio-card">
-                <button class="portfolio-card__zoom" type="button" aria-label="네온 아케이드 방송 화면 크게 보기" data-full-image="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1800&q=88">
-                  <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1100&q=78" srcset="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=640&q=74 640w, https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1100&q=78 1100w" sizes="(max-width: 759px) 84vw, 780px" alt="청록색 네온 도시를 활용한 방송 화면 디자인" width="1100" height="733" loading="lazy" decoding="async" fetchpriority="low">
+                <button class="portfolio-card__zoom" type="button" aria-label="방송 화면 디자인 모음 크게 보기" data-full-image="./assets/portfolio/stream-02.webp">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-image-key="stream-02" alt="여섯 가지 캐릭터 방송 화면 디자인 모음" width="884" height="745" loading="lazy" decoding="async" fetchpriority="low">
                   <span class="swiper-lazy-preloader" aria-hidden="true"></span><span class="portfolio-card__expand" aria-hidden="true">↗</span>
                 </button>
-                <div class="portfolio-card__meta"><div><span>STREAM IDENTITY</span><h3>Neon Arcade</h3></div><p>Overlay · Chat · Starting</p></div>
+                <div class="portfolio-card__meta"><div><span>STREAM COLLECTION</span><h3>방송 화면 모음</h3></div><p>Overlay · Welcome · Starting</p></div>
               </article>
 
               <article class="swiper-slide portfolio-card">
-                <button class="portfolio-card__zoom" type="button" aria-label="오로라 브랜드 시스템 크게 보기" data-full-image="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?auto=format&fit=crop&w=1800&q=88">
-                  <img src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?auto=format&fit=crop&w=1100&q=78" srcset="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?auto=format&fit=crop&w=640&q=74 640w, https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?auto=format&fit=crop&w=1100&q=78 1100w" sizes="(max-width: 759px) 84vw, 780px" alt="별빛과 오로라 콘셉트의 브랜드 시스템" width="1100" height="733" loading="lazy" decoding="async" fetchpriority="low">
+                <button class="portfolio-card__zoom" type="button" aria-label="메인텍스트 방송 디자인 크게 보기" data-full-image="./assets/portfolio/stream-03.webp">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-image-key="stream-03" alt="블루 캐릭터 메인텍스트 방송 디자인" width="884" height="497" loading="lazy" decoding="async" fetchpriority="low">
                   <span class="swiper-lazy-preloader" aria-hidden="true"></span><span class="portfolio-card__expand" aria-hidden="true">↗</span>
                 </button>
-                <div class="portfolio-card__meta"><div><span>BRAND SYSTEM</span><h3>Aurora</h3></div><p>Symbol · Palette · Graphic</p></div>
+                <div class="portfolio-card__meta"><div><span>STREAM UI</span><h3>메인텍스트</h3></div><p>Talk · Replay Screen</p></div>
               </article>
 
               <article class="swiper-slide portfolio-card">
-                <button class="portfolio-card__zoom" type="button" aria-label="사이버 블룸 일정표 디자인 크게 보기" data-full-image="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1800&q=88">
-                  <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1100&q=78" srcset="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=640&q=74 640w, https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1100&q=78 1100w" sizes="(max-width: 759px) 84vw, 780px" alt="레트로 게임 콘셉트의 사이버 블룸 일정표" width="1100" height="733" loading="lazy" decoding="async" fetchpriority="low">
+                <button class="portfolio-card__zoom" type="button" aria-label="블루 핑크 방송 화면 세트 크게 보기" data-full-image="./assets/portfolio/stream-04.webp">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-image-key="stream-04" alt="블루와 핑크 캐릭터 방송 화면 세트" width="884" height="497" loading="lazy" decoding="async" fetchpriority="low">
                   <span class="swiper-lazy-preloader" aria-hidden="true"></span><span class="portfolio-card__expand" aria-hidden="true">↗</span>
                 </button>
-                <div class="portfolio-card__meta"><div><span>CONTENTS DESIGN</span><h3>Cyber Bloom</h3></div><p>Schedule · Thumbnail · Panel</p></div>
+                <div class="portfolio-card__meta"><div><span>STREAM PACKAGE</span><h3>블루 &amp; 핑크</h3></div><p>Talk · Portrait · Replay</p></div>
               </article>
 
               <article class="swiper-slide portfolio-card">
-                <button class="portfolio-card__zoom" type="button" aria-label="미드나잇 라디오 로고 디자인 크게 보기" data-full-image="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1800&q=88">
-                  <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1100&q=78" srcset="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=640&q=74 640w, https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1100&q=78 1100w" sizes="(max-width: 759px) 84vw, 780px" alt="밤하늘과 달빛을 활용한 미드나잇 라디오 로고 디자인" width="1100" height="733" loading="lazy" decoding="async" fetchpriority="low">
+                <button class="portfolio-card__zoom" type="button" aria-label="핑크 토끼 방송 화면 크게 보기" data-full-image="./assets/portfolio/stream-05.webp">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-image-key="stream-05" alt="핑크 토끼 캐릭터 방송 대기 화면" width="884" height="497" loading="lazy" decoding="async" fetchpriority="low">
                   <span class="swiper-lazy-preloader" aria-hidden="true"></span><span class="portfolio-card__expand" aria-hidden="true">↗</span>
                 </button>
-                <div class="portfolio-card__meta"><div><span>LOGO DESIGN</span><h3>Midnight Radio</h3></div><p>Logotype · Emblem · Motion</p></div>
+                <div class="portfolio-card__meta"><div><span>STREAM SCREEN</span><h3>Rabbit Dream</h3></div><p>Starting · Character Visual</p></div>
               </article>
             </div>
           </div>
@@ -207,6 +215,46 @@
               <button class="portfolio-prev" type="button" aria-label="이전 작업">←</button>
               <button class="portfolio-next" type="button" aria-label="다음 작업">→</button>
             </div>
+          </div>
+        </div>
+
+        <div class="portfolio-panel" id="panel-banner" role="tabpanel" aria-labelledby="tab-banner" data-portfolio-panel="banner" hidden>
+          <div class="portfolio-grid">
+            <button class="portfolio-grid-card portfolio-card__zoom" type="button" data-full-image="./assets/portfolio/banner-01.webp" aria-label="핑크 캐릭터 배너 크게 보기"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-image-key="banner-01" alt="핑크 캐릭터 홍보 배너" width="640" height="120" loading="lazy" decoding="async"></button>
+            <button class="portfolio-grid-card portfolio-card__zoom" type="button" data-full-image="./assets/portfolio/banner-02.webp" aria-label="보라색 달빛 배너 크게 보기"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-image-key="banner-02" alt="보라색 달빛 캐릭터 배너" width="1180" height="171" loading="lazy" decoding="async"></button>
+            <button class="portfolio-grid-card portfolio-card__zoom" type="button" data-full-image="./assets/portfolio/banner-03.webp" aria-label="화이트 캐릭터 배너 크게 보기"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-image-key="banner-03" alt="화이트 캐릭터 채널 배너" width="1180" height="171" loading="lazy" decoding="async"></button>
+            <button class="portfolio-grid-card portfolio-card__zoom" type="button" data-full-image="./assets/portfolio/banner-04.webp" aria-label="노란색 캐릭터 배너 크게 보기"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-image-key="banner-04" alt="노란색 캐릭터 채널 배너" width="1180" height="368" loading="lazy" decoding="async"></button>
+            <button class="portfolio-grid-card portfolio-card__zoom" type="button" data-full-image="./assets/portfolio/banner-05.webp" aria-label="레드 캐릭터 배너 크게 보기"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-image-key="banner-05" alt="레드 캐릭터 채널 배너" width="1180" height="368" loading="lazy" decoding="async"></button>
+            <button class="portfolio-grid-card portfolio-card__zoom" type="button" data-full-image="./assets/portfolio/banner-06.webp" aria-label="아이보리 캐릭터 배너 크게 보기"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-image-key="banner-06" alt="아이보리 캐릭터 채널 배너" width="1180" height="368" loading="lazy" decoding="async"></button>
+            <button class="portfolio-grid-card portfolio-card__zoom" type="button" data-full-image="./assets/portfolio/banner-07.webp" aria-label="딸기 캐릭터 배너 크게 보기"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-image-key="banner-07" alt="딸기 캐릭터 채널 배너" width="720" height="150" loading="lazy" decoding="async"></button>
+            <button class="portfolio-grid-card portfolio-card__zoom" type="button" data-full-image="./assets/portfolio/banner-08.webp" aria-label="딸기 캐릭터 배너 두 번째 크게 보기"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-image-key="banner-08" alt="딸기 캐릭터 채널 배너 두 번째 시안" width="720" height="150" loading="lazy" decoding="async"></button>
+          </div>
+        </div>
+
+        <div class="portfolio-panel" id="panel-logo" role="tabpanel" aria-labelledby="tab-logo" data-portfolio-panel="logo" hidden>
+          <div class="portfolio-grid portfolio-grid--single"><button class="portfolio-grid-card portfolio-card__zoom" type="button" data-full-image="./assets/portfolio/logo-01.webp" aria-label="캐릭터 로고 디자인 모음 크게 보기"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-image-key="logo-01" alt="찬란 캐릭터 로고 디자인 모음" width="1180" height="663" loading="lazy" decoding="async"></button></div>
+        </div>
+
+        <div class="portfolio-panel" id="panel-fancafe" role="tabpanel" aria-labelledby="tab-fancafe" data-portfolio-panel="fancafe" hidden>
+          <div class="portfolio-grid">
+            <button class="portfolio-grid-card portfolio-card__zoom" type="button" data-full-image="./assets/portfolio/fancafe-01.webp" aria-label="파스텔 팬카페 디자인 크게 보기"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-image-key="fancafe-01" alt="파스텔 캐릭터 팬카페 디자인" width="1180" height="665" loading="lazy" decoding="async"></button>
+            <button class="portfolio-grid-card portfolio-card__zoom" type="button" data-full-image="./assets/portfolio/fancafe-02.webp" aria-label="핑크 팬카페 디자인 크게 보기"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-image-key="fancafe-02" alt="핑크 캐릭터 팬카페 디자인" width="884" height="497" loading="lazy" decoding="async"></button>
+            <button class="portfolio-grid-card portfolio-card__zoom" type="button" data-full-image="./assets/portfolio/fancafe-03.webp" aria-label="민트 팬카페 디자인 크게 보기"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-image-key="fancafe-03" alt="민트 캐릭터 팬카페 디자인" width="884" height="497" loading="lazy" decoding="async"></button>
+            <button class="portfolio-grid-card portfolio-card__zoom" type="button" data-full-image="./assets/portfolio/fancafe-04.webp" aria-label="그린 팬카페 디자인 크게 보기"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-image-key="fancafe-04" alt="그린 캐릭터 팬카페 디자인" width="884" height="497" loading="lazy" decoding="async"></button>
+            <button class="portfolio-grid-card portfolio-card__zoom" type="button" data-full-image="./assets/portfolio/fancafe-05.webp" aria-label="화이트 팬카페 디자인 크게 보기"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-image-key="fancafe-05" alt="화이트 캐릭터 팬카페 디자인" width="884" height="497" loading="lazy" decoding="async"></button>
+            <button class="portfolio-grid-card portfolio-card__zoom" type="button" data-full-image="./assets/portfolio/fancafe-06.webp" aria-label="레드 팬카페 디자인 크게 보기"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-image-key="fancafe-06" alt="레드 캐릭터 팬카페 디자인" width="1180" height="665" loading="lazy" decoding="async"></button>
+            <button class="portfolio-grid-card portfolio-card__zoom" type="button" data-full-image="./assets/portfolio/fancafe-07.webp" aria-label="동양풍 PPT 디자인 크게 보기"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-image-key="fancafe-07" alt="동양풍 캐릭터 PPT 디자인" width="1180" height="665" loading="lazy" decoding="async"></button>
+          </div>
+        </div>
+
+        <div class="portfolio-panel" id="panel-poster" role="tabpanel" aria-labelledby="tab-poster" data-portfolio-panel="poster" hidden>
+          <div class="portfolio-grid">
+            <button class="portfolio-grid-card portfolio-card__zoom" type="button" data-full-image="./assets/portfolio/poster-01.webp" aria-label="캐릭터 배너 포스터 모음 크게 보기"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-image-key="poster-01" alt="캐릭터 배너와 포스터 작업 모음" width="732" height="549" loading="lazy" decoding="async"></button>
+            <button class="portfolio-grid-card portfolio-card__zoom" type="button" data-full-image="./assets/portfolio/poster-02.webp" aria-label="SNS 아이콘 디자인 크게 보기"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-image-key="poster-02" alt="SNS와 플랫폼 아이콘 디자인 모음" width="732" height="549" loading="lazy" decoding="async"></button>
+            <button class="portfolio-grid-card portfolio-card__zoom" type="button" data-full-image="./assets/portfolio/poster-03.webp" aria-label="캐릭터 아이콘 세트 크게 보기"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-image-key="poster-03" alt="캐릭터 커뮤니티 아이콘 세트" width="1180" height="1303" loading="lazy" decoding="async"></button>
+            <button class="portfolio-grid-card portfolio-card__zoom" type="button" data-full-image="./assets/portfolio/poster-04.webp" aria-label="블루 캐릭터 아이콘 세트 크게 보기"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-image-key="poster-04" alt="블루 캐릭터 커뮤니티 아이콘 세트" width="883" height="1006" loading="lazy" decoding="async"></button>
+            <button class="portfolio-grid-card portfolio-card__zoom" type="button" data-full-image="./assets/portfolio/poster-05.webp" aria-label="알티 포스터 모음 크게 보기"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-image-key="poster-05" alt="캐릭터 알티 이벤트 포스터 모음" width="884" height="497" loading="lazy" decoding="async"></button>
+            <button class="portfolio-grid-card portfolio-card__zoom" type="button" data-full-image="./assets/portfolio/poster-06.webp" aria-label="굿즈 디자인 모음 크게 보기"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-image-key="poster-06" alt="캐릭터 의류와 굿즈 디자인 모음" width="884" height="808" loading="lazy" decoding="async"></button>
           </div>
         </div>
       </div>

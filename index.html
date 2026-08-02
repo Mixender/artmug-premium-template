@@ -12,11 +12,13 @@
   <link rel="stylesheet" href="./css/portfolio.css">
   <link rel="stylesheet" href="./css/before-after.css">
   <link rel="stylesheet" href="./css/pricing.css">
+  <link rel="stylesheet" href="./css/review.css">
   <link rel="stylesheet" href="./css/faq.css">
   <script defer src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <script defer src="./js/hero.js"></script>
   <script defer src="./js/portfolio.js"></script>
   <script defer src="./js/before-after.js"></script>
+  <script defer src="./js/review.js"></script>
   <script defer src="./js/faq.js"></script>
 </head>
 
@@ -278,6 +280,61 @@
         </div>
 
         <p class="pricing__notice">표시 가격은 기본 구성을 기준으로 하며, 작업 범위와 일정에 따라 달라질 수 있습니다.</p>
+      </div>
+    </section>
+
+    <section class="reviews" id="review" aria-labelledby="review-title">
+      <div class="container">
+        <header class="reviews__header" data-reveal>
+          <div>
+            <p class="reviews__eyebrow">Client stories</p>
+            <h2 class="reviews__title" id="review-title">함께 만든 세계,<br>남겨주신 이야기</h2>
+          </div>
+          <div class="reviews__score" aria-label="고객 후기 평균 평점 5점 만점에 4.9점">
+            <div class="reviews__stars" aria-hidden="true">★★★★★</div>
+            <p><strong>4.9</strong><span>평균 만족도</span></p>
+          </div>
+        </header>
+
+        <div class="reviews__grid">
+          <article class="review-card review-card--featured" data-review-card>
+            <div class="review-card__top"><div class="review-card__stars" aria-label="5점 만점에 5점">★★★★★</div><span>데뷔 브랜딩</span></div>
+            <blockquote>“제가 말로 설명하지 못했던 캐릭터의 분위기까지 정확히 잡아주셨어요. 로고부터 방송 화면까지 한 브랜드처럼 이어져서 데뷔 첫날부터 반응이 정말 좋았습니다.”</blockquote>
+            <footer><span class="review-card__avatar review-card__avatar--violet" aria-hidden="true">L</span><div><strong>루미에르</strong><small>Virtual streamer</small></div><span class="review-card__verified">VERIFIED</span></footer>
+          </article>
+
+          <article class="review-card" data-review-card>
+            <div class="review-card__top"><div class="review-card__stars" aria-label="5점 만점에 5점">★★★★★</div><span>방송 화면</span></div>
+            <blockquote>“모바일로 봐도 글자가 잘 보이고 OBS 적용도 쉬웠어요. 요청한 네온 콘셉트보다 훨씬 세련되게 나왔습니다.”</blockquote>
+            <footer><span class="review-card__avatar review-card__avatar--blue" aria-hidden="true">N</span><div><strong>네온</strong><small>Game creator</small></div></footer>
+          </article>
+
+          <article class="review-card" data-review-card>
+            <div class="review-card__top"><div class="review-card__stars" aria-label="5점 만점에 5점">★★★★★</div><span>로고 디자인</span></div>
+            <blockquote>“수정 요청을 세심하게 반영해 주셨고, 작은 크기에서도 알아보기 좋은 로고라 활용도가 높아요.”</blockquote>
+            <footer><span class="review-card__avatar review-card__avatar--pink" aria-hidden="true">M</span><div><strong>미드나잇</strong><small>Radio host</small></div></footer>
+          </article>
+
+          <article class="review-card" data-review-card>
+            <div class="review-card__top"><div class="review-card__stars" aria-label="5점 만점에 5점">★★★★★</div><span>일정표</span></div>
+            <blockquote>“캐릭터 컬러를 살리면서 일정이 한눈에 들어와요. 매주 텍스트만 바꿔 쓸 수 있게 구성해 주셔서 편합니다.”</blockquote>
+            <footer><span class="review-card__avatar review-card__avatar--mint" aria-hidden="true">A</span><div><strong>아리아</strong><small>Music streamer</small></div></footer>
+          </article>
+
+          <article class="review-card review-card--wide" data-review-card>
+            <div class="review-card__top"><div class="review-card__stars" aria-label="5점 만점에 5점">★★★★★</div><span>리브랜딩</span></div>
+            <blockquote>“오래 방송하면서 디자인이 제각각이었는데, 이번 작업으로 채널 전체가 정돈됐습니다. 기존 팬들도 캐릭터다운 변화라고 좋아해 주셨어요.”</blockquote>
+            <footer><span class="review-card__avatar review-card__avatar--gold" aria-hidden="true">S</span><div><strong>솔라</strong><small>Live creator</small></div><span class="review-card__verified">VERIFIED</span></footer>
+          </article>
+
+          <article class="review-card" data-review-card>
+            <div class="review-card__top"><div class="review-card__stars" aria-label="5점 만점에 4점">★★★★<span>★</span></div><span>썸네일</span></div>
+            <blockquote>“빠른 일정이었는데도 퀄리티 좋게 완성해 주셨어요. 다음 방송 패키지도 맡기고 싶습니다.”</blockquote>
+            <footer><span class="review-card__avatar review-card__avatar--coral" aria-hidden="true">C</span><div><strong>체리</strong><small>Variety streamer</small></div></footer>
+          </article>
+        </div>
+
+        <p class="reviews__notice">실제 작업 경험을 바탕으로 구성한 후기 예시입니다.</p>
       </div>
     </section>
 

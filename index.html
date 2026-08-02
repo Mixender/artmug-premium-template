@@ -21,9 +21,9 @@
   <title>찬란 디자인 | 버츄얼 종합 디자인</title>
   <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
   <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
-  <link rel="preload" href="./css/app.min.css?v=banner-center-crop-1" as="style">
-  <link rel="stylesheet" href="./css/app.min.css?v=banner-center-crop-1">
-  <script defer src="./js/app.min.js?v=banner-remove-01-08"></script>
+  <link rel="preload" href="./css/app.min.css?v=portfolio-layout-split-1" as="style">
+  <link rel="stylesheet" href="./css/app.min.css?v=portfolio-layout-split-1">
+  <script defer src="./js/app.min.js?v=portfolio-layout-split-1"></script>
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -156,15 +156,7 @@
           <p class="portfolio__intro">캐릭터의 첫인상부터 방송의 모든 순간까지, 하나의 결로 설계한 작업을 만나보세요.</p>
         </header>
 
-        <div class="portfolio-tabs" role="tablist" aria-label="포트폴리오 카테고리" data-reveal>
-          <button class="portfolio-tab is-active" type="button" role="tab" id="tab-banner" aria-controls="panel-banner" aria-selected="true" data-portfolio-tab="banner">배너 디자인</button>
-          <button class="portfolio-tab" type="button" role="tab" id="tab-stream" aria-controls="panel-stream" aria-selected="false" data-portfolio-tab="stream">스트리밍 디자인</button>
-          <button class="portfolio-tab" type="button" role="tab" id="tab-logo" aria-controls="panel-logo" aria-selected="false" data-portfolio-tab="logo">로고 디자인</button>
-          <button class="portfolio-tab" type="button" role="tab" id="tab-fancafe" aria-controls="panel-fancafe" aria-selected="false" data-portfolio-tab="fancafe">팬카페·PPT</button>
-          <button class="portfolio-tab" type="button" role="tab" id="tab-poster" aria-controls="panel-poster" aria-selected="false" data-portfolio-tab="poster">포스터·기타</button>
-        </div>
-
-        <div class="portfolio__stage portfolio-panel is-active" id="panel-banner" role="tabpanel" aria-labelledby="tab-banner" data-portfolio-panel="banner" data-reveal data-reveal-delay="120">
+        <div class="portfolio__stage portfolio__featured-banner" id="panel-banner" aria-label="배너 디자인 슬라이드쇼" data-reveal data-reveal-delay="120">
           <div class="swiper portfolio-slider" aria-label="대표 포트폴리오 슬라이드">
             <div class="swiper-wrapper">
               <article class="swiper-slide portfolio-card">
@@ -218,7 +210,19 @@
           </div>
         </div>
 
-        <div class="portfolio-panel" id="panel-stream" role="tabpanel" aria-labelledby="tab-stream" data-portfolio-panel="stream" hidden>
+        <div class="portfolio-categories" data-reveal>
+          <div class="portfolio-categories__heading">
+            <p>More portfolio</p>
+            <h3>다른 디자인도 둘러보세요</h3>
+          </div>
+          <div class="portfolio-tabs" role="tablist" aria-label="포트폴리오 카테고리">
+            <button class="portfolio-tab is-active" type="button" role="tab" id="tab-stream" aria-controls="panel-stream" aria-selected="true" data-portfolio-tab="stream">스트리밍 디자인</button>
+            <button class="portfolio-tab" type="button" role="tab" id="tab-logo" aria-controls="panel-logo" aria-selected="false" data-portfolio-tab="logo">로고 디자인</button>
+            <button class="portfolio-tab" type="button" role="tab" id="tab-fancafe" aria-controls="panel-fancafe" aria-selected="false" data-portfolio-tab="fancafe">팬카페·PPT</button>
+            <button class="portfolio-tab" type="button" role="tab" id="tab-poster" aria-controls="panel-poster" aria-selected="false" data-portfolio-tab="poster">포스터·기타</button>
+          </div>
+
+        <div class="portfolio-panel is-active" id="panel-stream" role="tabpanel" aria-labelledby="tab-stream" data-portfolio-panel="stream">
           <div class="portfolio-grid">
             <button class="portfolio-grid-card portfolio-card__zoom" type="button" data-full-image="./assets/portfolio/banner-01.webp" aria-label="핑크 캐릭터 배너 크게 보기"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-image-key="banner-01" alt="핑크 캐릭터 홍보 배너" width="640" height="120" loading="lazy" decoding="async"></button>
             <button class="portfolio-grid-card portfolio-card__zoom" type="button" data-full-image="./assets/portfolio/banner-02.webp" aria-label="보라색 달빛 배너 크게 보기"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-image-key="banner-02" alt="보라색 달빛 캐릭터 배너" width="1180" height="171" loading="lazy" decoding="async"></button>
@@ -256,6 +260,7 @@
             <button class="portfolio-grid-card portfolio-card__zoom" type="button" data-full-image="./assets/portfolio/poster-05.webp" aria-label="알티 포스터 모음 크게 보기"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-image-key="poster-05" alt="캐릭터 알티 이벤트 포스터 모음" width="884" height="497" loading="lazy" decoding="async"></button>
             <button class="portfolio-grid-card portfolio-card__zoom" type="button" data-full-image="./assets/portfolio/poster-06.webp" aria-label="굿즈 디자인 모음 크게 보기"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-image-key="poster-06" alt="캐릭터 의류와 굿즈 디자인 모음" width="884" height="808" loading="lazy" decoding="async"></button>
           </div>
+        </div>
         </div>
       </div>
     </section>
